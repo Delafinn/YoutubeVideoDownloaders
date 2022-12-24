@@ -40,7 +40,7 @@ while True:
 
     elif download_q in ("yes", "y"):
         audio_q = input("Do you want just the audio versions?\n:").lower()
-        if audio_q not in ("yes","y"):
+        if audio_q in ("yes","y"):
             download_plylst_audio()
         else:
             download_plylst_highresolution()
