@@ -7,7 +7,7 @@ from pytube import YouTube
 while True:
 
     URL = input("""Enter the YouTube video URL\n
-    Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ \n:""").lower()
+    Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ \n:""")
     if URL in ("","exit"):
         sys.exit()
     yt = YouTube(URL)
