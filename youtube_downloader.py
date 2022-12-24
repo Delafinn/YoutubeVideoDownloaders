@@ -19,6 +19,6 @@ while True:
         sys.exit()
     if download_q in ("yes","y"):
         stream.download()
-        print("Video has been downloaded!")
+        print(f"Video {yt.title.upper()} has been downloaded!")
         time.sleep(1.1)
         input("press any key to continue.")
