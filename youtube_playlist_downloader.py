@@ -17,13 +17,13 @@ while True:
         """downloads audio version"""
         for vid in plylst.videos:
             vid.streams.get_audio_only().download()
-            print(f"video:{video.title} has been downloaded!")
+            print(f"video:{vid.title} has been downloaded!")
 
     def download_plylst_highresolution():
         """downloads highest resolution video"""
         for vid in plylst.videos:
             vid.streams.get_highest_resolution().download()
-            print(f"video:{video.title} has been downloaded!")
+            print(f"video:{vid.title} has been downloaded!")
 
 
     print(f" the playlist title is: {plylst.title.upper()}")
