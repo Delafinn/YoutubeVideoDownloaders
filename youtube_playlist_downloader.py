@@ -7,7 +7,7 @@ while True:
 
     URL = input("""Enter the playlist URL \n Example:
     https://www.youtube.com/watch?v=csO17lCKXIg&list=PLqwa-myoJ8QdXwCGew3vF7G0AAwinpYGl
-    \n:""").lower()
+    \n:""")
     if URL in ("","exit"):
         sys.exit()
 
