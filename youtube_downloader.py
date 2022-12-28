@@ -23,7 +23,7 @@ while True:
     def audio_only():
         """downloads audio version"""
         stream = yt.streams.get_audio_only()
-        stream.download()
+        stream.download(specify_directory)
         print(f"Video {yt.title.upper()} has been downloaded!")
         time.sleep(1.1)
         input("press any key to continue.")
