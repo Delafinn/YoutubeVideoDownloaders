@@ -1,9 +1,28 @@
-# Welcome to YoutubeVideoDownloader!
+# Youtube Video Downloader
 
-Make sure to `pip install pytube` from your command line. 
+A simple Python script that can download a video or audio from a YouTube playlist or a normal YouTube video.
 
-Scripts that will download a playlist of youtube videos or download a single youtube video.
+## How to use
 
-**youtube_playlist_downloader** and **youtube_downloader** have the option to only install audio versions rather than just video. 
+To download a single video, run:
 
-Lastly, Make sure to create a new folder/directory and place these python scripts inside your new directory. Videos that are downloaded are going to be downloaded to the same directory as these scripts.
+```sh
+    python youtube_downloader.py
+```
+
+To download a playlist, run:
+
+```sh
+    python youtube_playlist_downloader.py
+```
+
+The download files is normally saved at `/out` directory of the project
+
+## Installation
+
+1. Clone or download this Github repository
+2. Run the following command to install pytube
+
+```sh
+    pip install pytube
+```
