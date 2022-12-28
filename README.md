@@ -7,13 +7,13 @@ A simple Python script that can download a video or audio from a YouTube playlis
 To download a single video, run:
 
 ```sh
-    python youtube_downloader.py
+python youtube_downloader.py
 ```
 
 To download a playlist, run:
 
 ```sh
-    python youtube_playlist_downloader.py
+python youtube_playlist_downloader.py
 ```
 
 The download files is normally saved at `/out` directory of the project
@@ -24,5 +24,5 @@ The download files is normally saved at `/out` directory of the project
 2. Run the following command to install pytube
 
 ```sh
-    pip install pytube
+pip install pytube
 ```
