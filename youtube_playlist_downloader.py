@@ -16,13 +16,13 @@ while True:
     def download_plylst_audio():
         """downloads audio version"""
         for vid in plylst.videos:
-            vid.streams.get_audio_only().download()
+            vid.streams.get_audio_only().download(specify_directory)
             print(f"video:{vid.title} has been downloaded!")
 
     def download_plylst_highresolution():
         """downloads highest resolution video"""
         for vid in plylst.videos:
-            vid.streams.get_highest_resolution().download()
+            vid.streams.get_highest_resolution().download(specify_directory)
             print(f"video:{vid.title} has been downloaded!")
 
 
@@ -38,7 +38,9 @@ while True:
     if download_q in ("no","n"):
         sys.exit()
 
+
     elif download_q in ("yes", "y"):
+        specify_directory = input("Do you wish to specify the directory of the saved video? (Leave blank for the folder of the python script) ")
         audio_q = input("Do you want just the audio versions?\n:").lower()
         if audio_q in ("yes","y"):
             download_plylst_audio()
