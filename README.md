@@ -7,13 +7,13 @@ A simple Python script that can download a video or audio from a YouTube playlis
 To download a single video, run:
 
 ```sh
-python youtube_downloader.py
+python/ python3 youtube_downloader.py
 ```
 
 To download a playlist, run:
 
 ```sh
-python youtube_playlist_downloader.py
+python/ python3 youtube_playlist_downloader.py
 ```
 
 The download files is normally saved at `/out` directory of the project
