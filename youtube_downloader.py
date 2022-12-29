@@ -21,7 +21,7 @@ while True:
 
     if confirm_inp.startswith('y'):
 
-        audio_q = input('Do you wish to download the audio version only? [y/N]: ').lower()
+        audio_q = input('Do you wish to download the audio version only? [Y/N]: ').lower()
 
         path = input('Where do you want to save the download files? (Default is set to \'./out\'): ')
         path = './out' if not path else path
@@ -31,3 +31,4 @@ while True:
             continue
 
         downloader.download_audio(video, path)
+
