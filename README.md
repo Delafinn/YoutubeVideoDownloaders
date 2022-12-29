@@ -26,3 +26,7 @@ The download files is normally saved at `/out` directory of the project
 ```sh
 pip install pytube
 ```
+
+3. MacOS specific step:
+- Open your `Applications` folder in finder, and find the folder called `Python 3.x` (`x` is your python version). 
+- Double click `installcertificates.command`, which will open the terminal.
